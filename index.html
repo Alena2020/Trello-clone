@@ -10,6 +10,27 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+
+  <div class="app">
+    <div class="boards">
+      <div class="boards__item">
+        <span contenteditable="true" class="title">Enter a title</span>
+        <ul class="list">
+          <li class="list__item" draggable="true">Start card</li>
+        </ul>
+
+        <form class="form">
+          <textarea class="textarea" placeholder="Enter a name for this card"></textarea>
+          <div class="buttons">
+            <button class="add__item-btn">Add a card</button>
+            <button class="cancel__item-btn">Cancel</button>
+          </div>
+        </form>
+
+        <div class="add__btn"><span> + </span>Add a card</div>
+      </div>
+    </div>
+  </div>
   
   <script src="./js/main.js"></script>
 </body>
