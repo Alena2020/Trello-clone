@@ -61,7 +61,18 @@ function addBoard() {
         <ul class="list"></ul>  
   `;
   boards.append(board);
-  
+
+  changeTitle();  
 }
 
 button.addEventListener('click', addBoard);
+
+function changeTitle() {
+  const titles = document.querySelectorAll('.title');
+
+  titles.forEach(title => {
+    title.addEventListener('click', e => e.target.textContent = '');
+  });  
+}
+
+changeTitle();

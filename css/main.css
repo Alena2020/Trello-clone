@@ -17,6 +17,7 @@
 
 .boards {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -27,7 +28,7 @@
   min-width: 250px;
   width: 10%;
   background-color: rgba(0, 0, 0, .5);
-  margin: 0 15px;
+  margin: 10px 15px;
   padding: 10px;
   transition: .3s all ease;
   border-radius: 5px;
