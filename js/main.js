@@ -1,4 +1,5 @@
 const lists = document.querySelectorAll('.list');
+const button = document.querySelector('.button');
 
 function addTask() {
   const btn = document.querySelector('.add__btn');
@@ -50,3 +51,17 @@ function addTask() {
 }
 
 addTask();
+
+function addBoard() {
+  const boards = document.querySelector('.boards');
+  const board = document.createElement('div');
+  board.classList.add('boards__item');
+  board.innerHTML = `
+          <span contenteditable="true" class="title">Enter a title</span>
+        <ul class="list"></ul>  
+  `;
+  boards.append(board);
+  
+}
+
+button.addEventListener('click', addBoard);
